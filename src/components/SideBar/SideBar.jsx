@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import "@styles/css/components/SideBar/SideBar.css";
+import "@assets/css/components/SideBar/SideBar.css";
 import NFTIcon from "@assets/icon/NFT.svg";
 import logoImage from "@assets/img/logo.svg";
 import HomeIcon from "@assets/icon/home.svg";

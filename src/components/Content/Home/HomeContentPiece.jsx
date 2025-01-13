@@ -1,19 +1,10 @@
-import "@styles/css/components/Content/Home/HomeContentPiece.css";
+import "@assets/css/components/Content/Home/HomeContentPiece.css";
 
 function HomeContentPiece({props}) {
     return (
-        <div className="home-content-piece"
-            style={{
-                backgroundImage: props.bgURL,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-            }}
-        >
-            <div className="content-piece-logo">
-                <img 
-                    src={props.logoURL}
-                    alt="Logo"
-                />
+        <div className={`home-content-piece ${props.bgIdx}`}>
+            <div className={`content-piece-logo ${props.bgIdx}`}>
+                <img src={props.logoURL} alt="Logo" />
             </div>
             <div className="content-piece-data">
                 <div className="content-piece-data-title">

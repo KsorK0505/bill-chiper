@@ -11,12 +11,12 @@
 
 @font-face {
   font-family: 'Lota Grotesque';
-  src: url('@styles/fonts/Lota Grotesque Regular.otf') format('opentype');
+  src: url('@assets/fonts/Lota Grotesque Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Oceanwide';
-  src: url('@styles/fonts/Oceanwide-Semibold.otf') format('opentype');
+  src: url('@assets/fonts/Oceanwide-Semibold.otf') format('opentype');
 }
 
 body {
