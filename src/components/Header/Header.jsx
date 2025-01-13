@@ -1,5 +1,6 @@
-import "@styles/css/components/Header/Header.css";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+
+import "@styles/css/components/Header/Header.css";
 
 function Header() {
     return (

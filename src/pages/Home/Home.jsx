@@ -1,13 +1,13 @@
 import React from "react";
+
 import "@/styles/css/pages/Home/Home.css";
-import HomeContentPiece from "@/components/Content/Home/HomeContentPiece";
-import GlobalStatsBG from "@assets/img/globalStats-bg.svg";
-import GlobalStatsLogo from "@assets/img/globalStats-logo.svg";
 import PluseChainBG from "@assets/img/pluseChain-bg.svg";
+import GlobalStatsBG from "@assets/img/globalStats-bg.svg";
 import PluseChainLogo from "@assets/img/pluseChain-logo.svg";
 import AvalancheBG from "@assets/img/globalLiquidity-bg.svg";
+import GlobalStatsLogo from "@assets/img/globalStats-logo.svg";
 import AvalancheLogo from "@assets/img/globalLiquidity-logo.svg";
-
+import HomeContentPiece from "@/components/Content/Home/HomeContentPiece";
 
 function Home() {
     const datas = [

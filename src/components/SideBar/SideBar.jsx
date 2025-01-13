@@ -1,12 +1,13 @@
+import { Link, useLocation } from "react-router-dom";
+
 import "@styles/css/components/SideBar/SideBar.css";
+import NFTIcon from "@assets/icon/NFT.svg";
 import logoImage from "@assets/img/logo.svg";
-import logoTitle from "@assets/img/logo-title.svg";
 import HomeIcon from "@assets/icon/home.svg";
 import EarnIcon from "@assets/icon/earn.svg";
-import NFTIcon from "@assets/icon/NFT.svg";
 import SwapIcon from "@assets/icon/swap.svg";
 import BridgeIcon from "@assets/icon/bridge.svg";
-import { Link, useLocation } from "react-router-dom";
+import logoTitle from "@assets/img/logo-title.svg";
 
 function sideBar() {
     const location = useLocation();
