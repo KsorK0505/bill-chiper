@@ -13,7 +13,7 @@ root.render(
       <BrowserRouter>
           <div className='flex'>
             <SideBar />
-            <div className="h-screen w-[85%]">
+            <div>
               <Header />
               <App />
             </div>
