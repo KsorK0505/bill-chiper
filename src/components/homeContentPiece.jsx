@@ -1,7 +1,6 @@
 import "@styles/css/components/homeContentPiece.css";
 
 function homeContentPiece({props}) {
-
     return (
         <div className="home-content-piece"
             style={{
@@ -24,22 +23,22 @@ function homeContentPiece({props}) {
                     <div>Price</div>
                     <div>{props.Price}</div>
                 </div>
-                <hr />
+                <hr className="content-piece-data-item-border" />
                 <div className="content-piece-data-item">
                     <div>Market Cap</div>
                     <div>{props.Market}</div>
                 </div>
-                <hr />
+                <hr className="content-piece-data-item-border" />
                 <div className="content-piece-data-item">
                     <div>Liquidity</div>
                     <div>{props.Liquidity}</div>
                 </div>
-                <hr />
+                <hr className="content-piece-data-item-border" />
                 <div className="content-piece-data-item">
                     <div>Circulating Supply</div>
                     <div>{props.Circulating}</div>
                 </div>
-                <hr />
+                <hr className="content-piece-data-item-border" />
                 <div className="content-piece-data-item">
                     <div>Amount Burned</div>
                     <div>{props.Amount}</div>

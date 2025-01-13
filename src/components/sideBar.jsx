@@ -1,16 +1,27 @@
 import "@styles/css/components/sideBar.css";
 import logoImage from "@assets/img/logo.svg";
-import logoTitle from "@assets/img/logo-text.svg";
+import logoTitle from "@assets/img/logo-title.svg";
 import HomeIcon from "@assets/icon/home.svg";
 import EarnIcon from "@assets/icon/earn.svg";
 import NFTIcon from "@assets/icon/NFT.svg";
 import SwapIcon from "@assets/icon/swap.svg";
 import BridgeIcon from "@assets/icon/bridge.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function sideBar() {
+    const location = useLocation();
+
+    const menuItems = [
+        {name:"Home", path:"/", icon:HomeIcon},
+        {name:"Earn", path:"/Earn", icon:EarnIcon},
+        {name:"NFTs", path:"/NFTs", icon:NFTIcon},
+        {name:"Swap", path:"/Swap", icon:SwapIcon},
+        {name:"Bridge", path:"/Bridge", icon:BridgeIcon},
+    ];
+
     return (
         <div className="sideBar">
+
             <div className="logo">
                 <img
                     src={logoImage}
@@ -24,57 +35,18 @@ function sideBar() {
                 />
             </div>
             <div className="menu">
-                <Link to = "/">
-                    <div className="menu-item">
-                        <div className="menu-item-icon">
-                            <img src={HomeIcon} alt="Home Icon" />
+                {menuItems.map((item) => (
+                    <Link to = {item.path}>
+                        <div className={`menu-item ${location.pathname === item.path ? "menu-item-active" : "" }`} >
+                            <div className="menu-item-icon">
+                                <img src={item.icon} alt={`${item.name} Icon`} />
+                            </div>
+                            <div className="menu-item-name">
+                                {item.name}
+                            </div>
                         </div>
-                        <div className="menu-item-name">
-                            Home
-                        </div>
-                    </div>
-                </Link>
-                <Link to = "/Earn">
-                    <div className="menu-item">
-                        <div className="menu-item-icon">
-                            <img src={EarnIcon} alt="Earn Icon" />
-                        </div>
-                        <div className="menu-item-name">
-                            Earn
-                        </div>
-                    </div>
-                </Link>
-                <Link to = "/NFTs">
-                    <div className="menu-item">
-                        <div className="menu-item-icon">
-                            <img src={NFTIcon} alt="NFT Icon" />
-                        </div>
-                        <div className="menu-item-name">
-                            NFT's
-                        </div>
-                    </div>
-                </Link>
-                
-                <Link to = "/Swap">
-                    <div className="menu-item">
-                        <div className="menu-item-icon">
-                            <img src={SwapIcon} alt="Swap Icon" />
-                        </div>
-                        <div className="menu-item-name">
-                            Swap
-                        </div>
-                    </div>
-                </Link>
-                <Link to = "/Bridge">
-                    <div className="menu-item">
-                        <div className="menu-item-name">
-                            <img src={BridgeIcon} alt="Bridge Icon" />
-                        </div>
-                        <div className="menu-item-name">
-                            Bridge
-                        </div>
-                    </div>
-                </Link>
+                    </Link>
+                ))}
             </div>
         </div>
     );    

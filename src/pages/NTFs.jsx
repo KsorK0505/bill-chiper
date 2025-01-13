@@ -1,6 +1,6 @@
 function NFTs() {
     return (
-        <p className="text-[white]">This is NFTs Page</p>
+        <p className="text-[white] text-[25px]">NFTs Page</p>
     );
 }
 

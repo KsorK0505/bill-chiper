@@ -1,6 +1,6 @@
 function Earn() {
     return (
-        <p className="text-[white]">This is Earn Page</p>
+        <p className="text-[white] text-[25px]">Earn Page</p>
     );
 }
 

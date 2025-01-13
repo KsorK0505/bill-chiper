@@ -19,7 +19,7 @@
 }
 
 .menu-item {
-    @apply flex gap-[15px] items-center h-[58px] pl-10 pt-4 hover:bg-gray-800 hover:rounded-[8px];
+    @apply flex gap-[15px] items-center h-[58px] pl-10 pt-4 transition-all duration-300;
 }
 
 .menu-item-icon {
@@ -31,3 +31,9 @@
     color: rgba(255,255,255,0.4);
     font-size: 20px;
 }
+
+.menu-item-active {
+    @apply rounded-[8px];
+    background-color: rgb(39,39,40);
+}
+

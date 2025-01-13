@@ -1,6 +1,6 @@
 function Swap() {
     return (
-        <p className="text-[white]">This is Swap Page</p>
+        <p className="text-[white] text-[25px]">Swap Page</p>
     );
 }
 

@@ -14,6 +14,11 @@
   src: url('@styles/fonts/Lota Grotesque Regular.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Oceanwide';
+  src: url('@styles/fonts/Oceanwide-Semibold.otf') format('opentype');
+}
+
 body {
   background-image: url('@assets/img/bg.svg');
   @apply bg-cover bg-no-repeat;
