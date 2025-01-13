@@ -1,0 +1,33 @@
+.sideBar {
+    @apply h-full w-[288px] border-r border-[rgb(60,67,107)];
+}
+
+.logo {
+    @apply flex relative w-[238px] h-[68px] top-[26px] left-[25px] gap-[12.75px] items-center;
+}
+
+.logo-image {
+    @apply w-[70.12px] h-[68px];
+}
+
+.logo-title {
+    @apply w-[155.12px] h-[27.62px];
+}
+
+.menu {
+    @apply flex-col gap-[60px] w-[268px] mt-[92px] ml-[10px] mr-[10px] h-screen;
+}
+
+.menu-item {
+    @apply flex gap-[15px] items-center h-[58px] pl-10 pt-4 hover:bg-gray-800 hover:rounded-[8px];
+}
+
+.menu-item-icon {
+    @apply w-[30px] h-[30px];
+}
+
+.menu-item-name {
+    font-family: 'Lota Grotesque';
+    color: rgba(255,255,255,0.4);
+    font-size: 20px;
+}

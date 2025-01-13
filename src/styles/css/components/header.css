@@ -1,0 +1,8 @@
+.header {
+    @apply flex items-center w-[1632px] h-[106px] border-b border-[rgb(60,67,107)];
+}
+
+.connect-wallet-button {
+    @apply absolute w-[201px] h-[66px] rounded-[200px] text-white right-[45px] font-bold text-[20px];
+    background: linear-gradient(to right, rgba(131,70,227,1), rgba(11,55,214,1));
+}

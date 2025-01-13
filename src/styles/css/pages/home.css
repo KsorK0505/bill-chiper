@@ -1,0 +1,3 @@
+.home {
+    @apply flex w-[1632px] h-[974px] pb-[107px] justify-evenly items-center;
+}

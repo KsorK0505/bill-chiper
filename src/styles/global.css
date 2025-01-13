@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('@assets/styles/fonts/Lota Grotesque Regular.otf') format('truetype');
+}
+
+body {
+  background-image: url('@assets/img/bg.svg');
+  @apply bg-cover bg-no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
