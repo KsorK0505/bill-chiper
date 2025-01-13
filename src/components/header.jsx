@@ -33,6 +33,7 @@ function Header() {
                             opacity: 0,
                             pointerEvents: 'none',
                             userSelect: 'none',
+                            height: '100%',
                         },
                         })}
                     >
