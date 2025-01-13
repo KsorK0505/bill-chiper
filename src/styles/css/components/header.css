@@ -3,7 +3,7 @@
 }
 
 .connect-wallet-button {
-    @apply absolute w-[201px] h-[66px] rounded-[200px] text-white right-[45px] text-[20px];
+    @apply absolute w-[180px] h-[56px] rounded-[200px] text-white right-[45px] text-[18px];
     background: linear-gradient(to right, rgba(131,70,227,1), rgba(11,55,214,1));
     font-family: 'Lota Grotesque';
 }
