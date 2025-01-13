@@ -21,7 +21,7 @@
 
 body {
   background-image: url('@assets/img/bg.svg');
-  @apply bg-cover bg-no-repeat overflow-hidden;
+  @apply bg-cover bg-no-repeat overflow-x-hidden;
 }
 
 code {
