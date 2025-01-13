@@ -14,7 +14,7 @@ function Home() {
         {
             bgURL: GlobalStatsBG,
             logoURL: GlobalStatsLogo,
-            title: "Global Stats",
+            title: "Changed Global Stats",
             Price: "$0.00",
             Market: "$0.00",
             Liquidity: "$0.00",
