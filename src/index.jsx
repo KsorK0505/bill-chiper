@@ -9,8 +9,8 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import { config } from '@utils/wagmi.js';
-import SideBar from "@/components/sideBar.jsx";
-import Header from "@/components/header.jsx";
+import SideBar from "@/components/SideBar/SideBar.jsx";
+import Header from "@/components/Header/Header.jsx";
 
 // Create a QueryClient instance
 const queryClient = new QueryClient();

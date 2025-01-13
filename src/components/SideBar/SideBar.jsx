@@ -1,4 +1,4 @@
-import "@styles/css/components/sideBar.css";
+import "@styles/css/components/SideBar/SideBar.css";
 import logoImage from "@assets/img/logo.svg";
 import logoTitle from "@assets/img/logo-title.svg";
 import HomeIcon from "@assets/icon/home.svg";
@@ -21,7 +21,6 @@ function sideBar() {
 
     return (
         <div className="sideBar">
-
             <div className="logo">
                 <img
                     src={logoImage}

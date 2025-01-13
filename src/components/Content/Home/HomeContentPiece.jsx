@@ -1,6 +1,6 @@
-import "@styles/css/components/homeContentPiece.css";
+import "@styles/css/components/Content/Home/HomeContentPiece.css";
 
-function homeContentPiece({props}) {
+function HomeContentPiece({props}) {
     return (
         <div className="home-content-piece"
             style={{
@@ -48,4 +48,4 @@ function homeContentPiece({props}) {
     );
 }
 
-export default homeContentPiece;
+export default HomeContentPiece;

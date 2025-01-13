@@ -1,9 +1,9 @@
 import  {Routes, Route } from "react-router-dom";
-import Home from "@/pages/Home";
-import Earn from "./pages/Earn";
-import NFTs from "./pages/NTFs";
-import Swap from "./pages/Swap";
-import Bridge from "./pages/Bridge";
+import Home from "@/pages/Home/Home";
+import Earn from "./pages/Earn/Earn";
+import NFTs from "./pages/NFTs/NTFs";
+import Swap from "./pages/Swap/Swap";
+import Bridge from "./pages/Bridge/Bridge";
 
 function App() {
   return (

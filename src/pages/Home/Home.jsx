@@ -1,6 +1,6 @@
 import React from "react";
-import "@styles/css/pages/home.css";
-import HomeContentPiece from "@/components/homeContentPiece";
+import "@/styles/css/pages/Home/Home.css";
+import HomeContentPiece from "@/components/Content/Home/HomeContentPiece";
 import GlobalStatsBG from "@assets/img/globalStats-bg.svg";
 import GlobalStatsLogo from "@assets/img/globalStats-logo.svg";
 import PluseChainBG from "@assets/img/pluseChain-bg.svg";
