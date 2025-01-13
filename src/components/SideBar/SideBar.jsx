@@ -8,16 +8,21 @@ import EarnIcon from "@assets/icon/earn.svg";
 import SwapIcon from "@assets/icon/swap.svg";
 import BridgeIcon from "@assets/icon/bridge.svg";
 import logoTitle from "@assets/img/logo-title.svg";
+import HomeActiveIcon from "@assets/icon/home-active.svg";
+import EarnActiveIcon from "@assets/icon/earn-active.svg";
+import NFTsActiveIcon from "@assets/icon/NFT-active.svg";
+import SwapActiveIcon from "@assets/icon/swap-active.svg";
+import BridgeActiveIcon from "@assets/icon/bridge-active.svg";
 
 function sideBar() {
     const location = useLocation();
 
     const menuItems = [
-        {name:"Home", path:"/", icon:HomeIcon},
-        {name:"Earn", path:"/Earn", icon:EarnIcon},
-        {name:"NFTs", path:"/NFTs", icon:NFTIcon},
-        {name:"Swap", path:"/Swap", icon:SwapIcon},
-        {name:"Bridge", path:"/Bridge", icon:BridgeIcon},
+        {name:"Home", path:"/", icon:HomeIcon, activeIcon:HomeActiveIcon},
+        {name:"Earn", path:"/Earn", icon:EarnIcon, activeIcon:EarnActiveIcon},
+        {name:"NFTs", path:"/NFTs", icon:NFTIcon, activeIcon:NFTsActiveIcon},
+        {name:"Swap", path:"/Swap", icon:SwapIcon, activeIcon:SwapActiveIcon},
+        {name:"Bridge", path:"/Bridge", icon:BridgeIcon, activeIcon:BridgeActiveIcon},
     ];
 
     return (
@@ -39,9 +44,9 @@ function sideBar() {
                     <Link to = {item.path}>
                         <div className={`menu-item ${location.pathname === item.path ? "menu-item-active" : "" }`} >
                             <div className="menu-item-icon">
-                                <img src={item.icon} alt={`${item.name} Icon`} />
+                                <img src={location.pathname === item.path ? item.activeIcon : item.icon} alt={`${item.name} Icon`} />
                             </div>
-                            <div className="menu-item-name">
+                            <div className={location.pathname === item.path ? "menu-item-name-active" : "menu-item-name"}>
                                 {item.name}
                             </div>
                         </div>

@@ -19,7 +19,7 @@
 }
 
 .menu-item {
-    @apply flex gap-[15px] items-center h-[58px] pl-10 pt-4 transition-all duration-300;
+    @apply flex gap-[15px] items-center h-[58px] pl-10 transition-all duration-300;
 }
 
 .menu-item-icon {
@@ -32,8 +32,13 @@
     font-size: 20px;
 }
 
+.menu-item-name-active {
+    font-family: 'Lota Grotesque';
+    color: rgba(255,255,255,1);
+    font-size: 20px;
+}
+
 .menu-item-active {
     @apply rounded-[8px];
     background-color: rgb(39,39,40);
 }
-
