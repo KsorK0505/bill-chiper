@@ -56,7 +56,7 @@ function Header() {
                         }
 
                         return (
-                            <div style={{ display: 'flex', gap: 12 }}>
+                            <div style={{ display: 'flex', gap: 5 }}>
                             <button
                                 onClick={openChainModal}
                                 style={{ display: 'flex', alignItems: 'center' }}
@@ -70,7 +70,7 @@ function Header() {
                                     height: 12,
                                     borderRadius: 999,
                                     overflow: 'hidden',
-                                    marginRight: 4,
+                                    marginRight: 0,
                                     }}
                                 >
                                     {chain.iconUrl && (
@@ -82,7 +82,6 @@ function Header() {
                                     )}
                                 </div>
                                 )}
-                                {chain.name}
                             </button>
 
                             <button onClick={openAccountModal} type="button">
