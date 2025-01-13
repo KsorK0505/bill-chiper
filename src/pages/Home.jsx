@@ -5,8 +5,8 @@ import GlobalStatsBG from "@assets/img/globalStats-bg.svg";
 import GlobalStatsLogo from "@assets/img/globalStats-logo.svg";
 import PluseChainBG from "@assets/img/pluseChain-bg.svg";
 import PluseChainLogo from "@assets/img/pluseChain-logo.svg";
-import GlobalLiquidityBG from "@assets/img/globalLiquidity-bg.svg";
-import GlobalLiquidityLogo from "@assets/img/globalLiquidity-logo.svg";
+import AvalancheBG from "@assets/img/globalLiquidity-bg.svg";
+import AvalancheLogo from "@assets/img/globalLiquidity-logo.svg";
 
 
 function Home() {
@@ -32,9 +32,9 @@ function Home() {
             Amount: 1234,
         },
         {
-            bgURL: GlobalLiquidityBG,
-            logoURL: GlobalLiquidityLogo,
-            title: "Global Liquidity",
+            bgURL: AvalancheBG,
+            logoURL: AvalancheLogo,
+            title: "Avalanche Stats",
             Price: "$0.00",
             Market: "$0.00",
             Liquidity: "$0.00",
