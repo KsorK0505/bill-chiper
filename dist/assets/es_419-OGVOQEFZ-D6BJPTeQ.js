@@ -1,4 +1,4 @@
-var e=`{
+var e = `{
   "connect_wallet": {
     "label": "Conectar la billetera",
     "wrong_network": {
@@ -1346,4 +1346,5 @@ var e=`{
     }
   }
 }
-`;export{e as default};
+`;
+export { e as default };

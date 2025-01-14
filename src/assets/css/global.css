@@ -10,21 +10,21 @@
 }
 
 @font-face {
-  font-family: 'Lota Grotesque';
-  src: url('@assets/fonts/Lota Grotesque Regular.otf') format('opentype');
+  font-family: "Lota Grotesque";
+  src: url("@assets/fonts/Lota Grotesque Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Oceanwide';
-  src: url('@assets/fonts/Oceanwide-Semibold.otf') format('opentype');
+  font-family: "Oceanwide";
+  src: url("@assets/fonts/Oceanwide-Semibold.otf") format("opentype");
 }
 
 body {
-  background-image: url('@assets/img/bg.svg');
-  @apply bg-cover bg-no-repeat overflow-x-hidden;
+  background-image: url("@assets/img/bg.svg");
+  @apply overflow-x-hidden bg-cover bg-no-repeat;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

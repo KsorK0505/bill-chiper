@@ -1,7 +1,5 @@
 function Swap() {
-    return (
-        <p className="text-[white] text-[25px]">Swap Page</p>
-    );
+  return <p className="text-[25px] text-[white]">Swap Page</p>;
 }
 
 export default Swap;

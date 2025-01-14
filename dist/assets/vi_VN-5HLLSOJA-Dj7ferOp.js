@@ -1,4 +1,4 @@
-var E=`{
+var E = `{
   "connect_wallet": {
     "label": "Kết nối Ví",
     "wrong_network": {
@@ -1346,4 +1346,5 @@ var E=`{
     }
   }
 }
-`;export{E as default};
+`;
+export { E as default };

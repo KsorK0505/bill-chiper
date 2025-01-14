@@ -1,4 +1,4 @@
-var u=`{
+var u = `{
   "connect_wallet": {
     "label": "連接錢包",
     "wrong_network": {
@@ -1346,4 +1346,5 @@ var u=`{
     }
   }
 }
-`;export{u as default};
+`;
+export { u as default };

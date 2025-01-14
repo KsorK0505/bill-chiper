@@ -1,7 +1,5 @@
 function Earn() {
-    return (
-        <p className="text-[white] text-[25px]">Earn Page</p>
-    );
+  return <p className="text-[25px] text-[white]">Earn Page</p>;
 }
 
 export default Earn;

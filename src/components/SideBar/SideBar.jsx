@@ -15,46 +15,58 @@ import SwapActiveIcon from "@assets/icon/swap-active.svg";
 import BridgeActiveIcon from "@assets/icon/bridge-active.svg";
 
 function sideBar() {
-    const location = useLocation();
+  const location = useLocation();
 
-    const menuItems = [
-        {name:"Home", path:"/", icon:HomeIcon, activeIcon:HomeActiveIcon},
-        {name:"Earn", path:"/Earn", icon:EarnIcon, activeIcon:EarnActiveIcon},
-        {name:"NFTs", path:"/NFTs", icon:NFTIcon, activeIcon:NFTsActiveIcon},
-        {name:"Swap", path:"/Swap", icon:SwapIcon, activeIcon:SwapActiveIcon},
-        {name:"Bridge", path:"/Bridge", icon:BridgeIcon, activeIcon:BridgeActiveIcon},
-    ];
+  const menuItems = [
+    { name: "Home", path: "/", icon: HomeIcon, activeIcon: HomeActiveIcon },
+    { name: "Earn", path: "/Earn", icon: EarnIcon, activeIcon: EarnActiveIcon },
+    { name: "NFTs", path: "/NFTs", icon: NFTIcon, activeIcon: NFTsActiveIcon },
+    { name: "Swap", path: "/Swap", icon: SwapIcon, activeIcon: SwapActiveIcon },
+    {
+      name: "Bridge",
+      path: "/Bridge",
+      icon: BridgeIcon,
+      activeIcon: BridgeActiveIcon,
+    },
+  ];
 
-    return (
-        <div className="sideBar">
-            <div className="logo">
+  return (
+    <div className="sideBar">
+      <div className="logo">
+        <img src={logoImage} className="logo-image" alt="logo image" />
+        <img src={logoTitle} className="logo-title" alt="logo title" />
+      </div>
+      <div className="menu">
+        {menuItems.map((item) => (
+          <Link to={item.path}>
+            <div
+              className={`menu-item ${location.pathname === item.path ? "menu-item-active" : ""}`}
+            >
+              <div className="menu-item-icon">
                 <img
-                    src={logoImage}
-                    className="logo-image"
-                    alt="logo image"
+                  src={
+                    location.pathname === item.path
+                      ? item.activeIcon
+                      : item.icon
+                  }
+                  alt={`${item.name} Icon`}
                 />
-                <img
-                    src={logoTitle}
-                    className="logo-title"
-                    alt="logo title"
-                />
+              </div>
+              <div
+                className={
+                  location.pathname === item.path
+                    ? "menu-item-name-active"
+                    : "menu-item-name"
+                }
+              >
+                {item.name}
+              </div>
             </div>
-            <div className="menu">
-                {menuItems.map((item) => (
-                    <Link to = {item.path}>
-                        <div className={`menu-item ${location.pathname === item.path ? "menu-item-active" : "" }`} >
-                            <div className="menu-item-icon">
-                                <img src={location.pathname === item.path ? item.activeIcon : item.icon} alt={`${item.name} Icon`} />
-                            </div>
-                            <div className={location.pathname === item.path ? "menu-item-name-active" : "menu-item-name"}>
-                                {item.name}
-                            </div>
-                        </div>
-                    </Link>
-                ))}
-            </div>
-        </div>
-    );    
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default sideBar;

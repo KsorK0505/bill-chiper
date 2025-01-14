@@ -1,7 +1,5 @@
 function Bridge() {
-    return (
-        <p className="text-[white] text-[25px]">Bridge Page</p>
-    );
+  return <p className="text-[25px] text-[white]">Bridge Page</p>;
 }
 
 export default Bridge;

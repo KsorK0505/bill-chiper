@@ -1,15 +1,22 @@
 .header {
-    @apply flex items-center w-[1632px] h-[106px] border-b border-[rgb(60,67,107)];
+  @apply flex h-[106px] w-[1632px] items-center border-b border-[rgb(60,67,107)];
 }
 
 .connect-wallet-button {
-    @apply absolute w-[180px] h-[56px] rounded-[200px] text-white right-[45px] text-[18px];
-    background: linear-gradient(to right, rgba(131,70,227,1), rgba(11,55,214,1));
-    font-family: 'Lota Grotesque';
+  @apply absolute right-11 h-14 w-[180px] rounded-[200px] font-Lota text-lg text-white;
+  background: linear-gradient(
+    to right,
+    rgba(131, 70, 227, 1),
+    rgba(11, 55, 214, 1)
+  );
 }
 
 .switch-networks-button {
-    @apply absolute w-[180px] h-[56px] rounded-[200px] text-white right-[250px] text-[18px];
-    background: linear-gradient(to right, rgba(131,70,227,1), rgba(11,55,214,1));
-    font-family: 'Lota Grotesque';
+  @apply absolute right-[250px] h-[56px] w-[180px] rounded-[200px] font-Lota text-[18px] text-white;
+  background: linear-gradient(
+    to right,
+    rgba(131, 70, 227, 1),
+    rgba(11, 55, 214, 1)
+  );
+  font-family: "Lota Grotesque";
 }

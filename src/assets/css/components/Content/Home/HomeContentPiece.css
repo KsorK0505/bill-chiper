@@ -1,42 +1,41 @@
 .home-content-piece.first {
-    @apply w-[440px] h-[707px] rounded-[30px] pr-[40px] pl-[35px] pb-[30px] bg-[url("@/assets/img/globalStats-bg.png")];
+  @apply h-[707px] w-[440px] rounded-[30px] bg-[url("@/assets/img/globalStats-bg.png")] pb-[30px] pl-[35px] pr-[40px];
 }
 
 .home-content-piece.second {
-    @apply w-[440px] h-[707px] rounded-[30px] pr-[40px] pl-[35px] pb-[30px] bg-[url("@assets/img/pluseChain-bg.png")];
-    
+  @apply h-[707px] w-[440px] rounded-[30px] bg-[url("@assets/img/pluseChain-bg.png")] pb-[30px] pl-[35px] pr-[40px];
 }
 
 .home-content-piece.third {
-    @apply w-[440px] h-[707px] rounded-[30px] pr-[40px] pl-[35px] pb-[30px] bg-[url("@assets/img/avalancheStats-bg.png")];
+  @apply h-[707px] w-[440px] rounded-[30px] bg-[url("@assets/img/avalancheStats-bg.png")] pb-[30px] pl-[35px] pr-[40px];
 }
 
 .content-piece-logo.first {
-    @apply mt-[43px] w-[100px] h-[85px];
+  @apply mt-[43px] h-[85px] w-[100px];
 }
 
 .content-piece-logo.second {
-    @apply mt-[45px] w-[146px] h-[80px];
+  @apply mt-[45px] h-[80px] w-[146px];
 }
 
 .content-piece-logo.third {
-    @apply mt-[43px] w-[143px] h-[80px];
+  @apply mt-[43px] h-[80px] w-[143px];
 }
 
 .content-piece-data {
-    @apply mt-[44px] self-center;
+  @apply mt-[44px] self-center;
 }
 
 .content-piece-data-title {
-    @apply text-[32px] text-[white];
-    font-family: 'Oceanwide';
+  @apply text-3xl text-[white];
+  font-family: "Oceanwide";
 }
 
 .content-piece-data-item {
-    @apply flex h-[91px] items-center justify-between text-[24px] text-[white];
-    font-family: 'Lota Grotesque';
+  @apply flex h-[91px] items-center justify-between text-[24px] text-[white];
+  font-family: "Lota Grotesque";
 }
 
 .content-piece-data-item-border {
-    @apply border-t-[2px] border-[rgba(255,255,255,0.2)];
+  @apply border-t-[2px] border-[rgba(255,255,255,0.2)];
 }
