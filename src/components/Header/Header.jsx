@@ -105,7 +105,7 @@ function Header() {
                         <br></br>
                         {account.displayBalance
                           ? ` (${account.displayBalance})`
-                          : ""}
+                          : "()"}
                       </button>
                     </div>
                   );
