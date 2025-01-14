@@ -7,3 +7,9 @@
     background: linear-gradient(to right, rgba(131,70,227,1), rgba(11,55,214,1));
     font-family: 'Lota Grotesque';
 }
+
+.switch-networks-button {
+    @apply absolute w-[180px] h-[56px] rounded-[200px] text-white right-[250px] text-[18px];
+    background: linear-gradient(to right, rgba(131,70,227,1), rgba(11,55,214,1));
+    font-family: 'Lota Grotesque';
+}

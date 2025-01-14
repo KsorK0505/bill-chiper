@@ -56,7 +56,7 @@ function Header() {
                         }
 
                         return (
-                            <div style={{ display: 'flex', gap: 5 }}>
+                            <div style={{ display: 'flex', gap: 20 }}>
                             <button
                                 onClick={openChainModal}
                                 style={{ display: 'flex', alignItems: 'center' }}
@@ -66,18 +66,17 @@ function Header() {
                                 <div
                                     style={{
                                     background: chain.iconBackground,
-                                    width: 12,
-                                    height: 12,
+                                    width: 35,
+                                    height: 35,
                                     borderRadius: 999,
                                     overflow: 'hidden',
-                                    marginRight: 0,
                                     }}
                                 >
                                     {chain.iconUrl && (
                                     <img
                                         alt={chain.name ?? 'Chain icon'}
                                         src={chain.iconUrl}
-                                        style={{ width: 12, height: 12 }}
+                                        style={{ width: 35, height: 35 }}
                                     />
                                     )}
                                 </div>
@@ -86,6 +85,7 @@ function Header() {
 
                             <button onClick={openAccountModal} type="button">
                                 {account.displayName}
+                                <br></br>
                                 {account.displayBalance
                                 ? ` (${account.displayBalance})`
                                 : ''}
