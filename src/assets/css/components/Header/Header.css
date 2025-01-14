@@ -3,12 +3,12 @@
 }
 
 .connect-wallet-button {
-  @apply absolute right-11 h-14 w-[180px] rounded-[200px] font-Lota text-lg text-white;
-  background: linear-gradient(
-    to right,
-    rgba(131, 70, 227, 1),
-    rgba(11, 55, 214, 1)
-  );
+  @apply absolute right-11 h-14 w-[180px] rounded-[200px] font-Lota text-lg text-white bg-gradient-to-r from-[rgba(131,70,227,1)] to-[rgba(11,55,214,1)];
+}
+
+.connect-wallet-button.connect{
+  @apply absolute right-11 h-14 w-[225px] rounded-[200px] font-Lota text-lg text-white;
+  background: none;
 }
 
 .switch-networks-button {
