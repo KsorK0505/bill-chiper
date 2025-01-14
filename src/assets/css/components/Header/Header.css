@@ -1,21 +1,11 @@
 .header {
-  @apply flex h-[106px] w-[1632px] items-center border-b border-[rgb(60,67,107)];
+  @apply flex h-[106px] w-[1632px] items-center border-b border-light-blue;
 }
 
 .connect-wallet-button {
-  @apply absolute right-11 h-14 w-[180px] rounded-[200px] font-Lota text-lg text-white bg-gradient-to-r from-[rgba(131,70,227,1)] to-[rgba(11,55,214,1)];
+  @apply absolute right-11 h-14 w-[180px] rounded-full bg-gradient-to-r from-[rgba(131,70,227,1)] to-[rgba(11,55,214,1)] font-Lota text-lg text-white;
 }
 
-.connect-wallet-button.connect{
-  @apply absolute right-11 h-14 w-[225px] rounded-[200px] font-Lota text-lg text-white;
-  background: none;
-}
-
-.switch-networks-button {
-  @apply absolute right-[250px] h-[56px] w-[180px] rounded-[200px] font-Lota text-xl text-white;
-  background: linear-gradient(
-    to right,
-    rgba(131, 70, 227, 1),
-    rgba(11, 55, 214, 1)
-  );
+.connect-wallet-button.connect {
+  @apply absolute right-11 h-14 w-[225px] rounded-full bg-none font-Lota text-lg text-white;
 }

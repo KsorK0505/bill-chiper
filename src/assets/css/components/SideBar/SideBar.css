@@ -1,25 +1,25 @@
 .sideBar {
-  @apply h-full w-[288px] border-r border-[rgb(60,67,107)];
+  @apply h-full w-[288px] border-r border-light-blue;
 }
 
 .logo {
-  @apply relative left-[25px] top-[26px] flex h-[68px] w-[238px] items-center gap-[12.75px];
+  @apply relative left-6 top-6 flex h-[68px] w-[238px] items-center gap-3;
 }
 
 .logo-image {
-  @apply h-[68px] w-[70.12px];
+  @apply h-[68px] w-[70px];
 }
 
 .logo-title {
-  @apply h-[27.62px] w-[155.12px];
+  @apply h-[28px] w-[155px];
 }
 
 .menu {
-  @apply ml-[10px] mr-[10px] mt-[92px] h-screen w-[268px] flex-col gap-[60px];
+  @apply ml-3 mr-3 mt-24 h-screen w-[268px];
 }
 
 .menu-item {
-  @apply flex h-[58px] items-center gap-[15px] pl-10 transition-all duration-300;
+  @apply flex h-[58px] items-center gap-4 pl-10 transition-all duration-300;
 }
 
 .menu-item-icon {
@@ -27,18 +27,13 @@
 }
 
 .menu-item-name {
-  font-family: "Lota Grotesque";
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 20px;
+  @apply font-Lota text-xl text-white-40;
 }
 
 .menu-item-name-active {
-  font-family: "Lota Grotesque";
-  color: rgba(255, 255, 255, 1);
-  font-size: 20px;
+  @apply font-Lota text-xl text-white;
 }
 
 .menu-item-active {
-  @apply rounded-[8px];
-  background-color: rgb(39, 39, 40);
+  @apply rounded-lg bg-slate-800;
 }

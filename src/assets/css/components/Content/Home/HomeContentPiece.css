@@ -1,13 +1,13 @@
 .home-content-piece.first {
-  @apply h-[707px] w-[484px] bg-[url("@/assets/img/globalStats-bg.png")] pb-8 pl-9 pr-10;
+  @apply h-[707px] w-[484px] bg-globalStats-bg pb-8 pl-9 pr-10;
 }
 
 .home-content-piece.second {
-  @apply h-[707px] w-[484px] bg-[url("@assets/img/pluseChain-bg.png")] pb-8 pl-9 pr-10;
+  @apply h-[707px] w-[484px] bg-pluseChain-bg pb-8 pl-9 pr-10;
 }
 
 .home-content-piece.third {
-  @apply h-[707px] w-[484px] bg-[url("@assets/img/avalancheStats-bg.png")] pb-8 pl-9 pr-10;
+  @apply h-[707px] w-[484px] bg-avalanche-bg pb-8 pl-9 pr-10;
 }
 
 .content-piece-logo.first {
@@ -35,5 +35,5 @@
 }
 
 .content-piece-data-item-border {
-  @apply border-t-[2px] border-[rgba(255,255,255,0.2)];
+  @apply border-t-2 border-white-20;
 }
