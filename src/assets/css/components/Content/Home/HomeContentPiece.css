@@ -1,39 +1,37 @@
 .home-content-piece.first {
-  @apply h-[707px] w-[440px] rounded-[30px] bg-[url("@/assets/img/globalStats-bg.png")] pb-[30px] pl-[35px] pr-[40px];
+  @apply h-[707px] w-[484px] bg-[url("@/assets/img/globalStats-bg.png")] pb-8 pl-9 pr-10;
 }
 
 .home-content-piece.second {
-  @apply h-[707px] w-[440px] rounded-[30px] bg-[url("@assets/img/pluseChain-bg.png")] pb-[30px] pl-[35px] pr-[40px];
+  @apply h-[707px] w-[484px] bg-[url("@assets/img/pluseChain-bg.png")] pb-8 pl-9 pr-10;
 }
 
 .home-content-piece.third {
-  @apply h-[707px] w-[440px] rounded-[30px] bg-[url("@assets/img/avalancheStats-bg.png")] pb-[30px] pl-[35px] pr-[40px];
+  @apply h-[707px] w-[484px] bg-[url("@assets/img/avalancheStats-bg.png")] pb-8 pl-9 pr-10;
 }
 
 .content-piece-logo.first {
-  @apply mt-[43px] h-[85px] w-[100px];
+  @apply mt-11 h-[85px] w-[100px];
 }
 
 .content-piece-logo.second {
-  @apply mt-[45px] h-[80px] w-[146px];
+  @apply mt-11 h-[80px] w-[146px];
 }
 
 .content-piece-logo.third {
-  @apply mt-[43px] h-[80px] w-[143px];
+  @apply mt-11 h-[80px] w-[143px];
 }
 
 .content-piece-data {
-  @apply mt-[44px] self-center;
+  @apply mt-11 self-center;
 }
 
 .content-piece-data-title {
-  @apply text-3xl text-[white];
-  font-family: "Oceanwide";
+  @apply font-Ocean text-3xl text-white;
 }
 
 .content-piece-data-item {
-  @apply flex h-[91px] items-center justify-between text-[24px] text-[white];
-  font-family: "Lota Grotesque";
+  @apply flex h-[91px] items-center justify-between font-Lota text-2xl text-white;
 }
 
 .content-piece-data-item-border {

@@ -12,11 +12,10 @@
 }
 
 .switch-networks-button {
-  @apply absolute right-[250px] h-[56px] w-[180px] rounded-[200px] font-Lota text-[18px] text-white;
+  @apply absolute right-[250px] h-[56px] w-[180px] rounded-[200px] font-Lota text-xl text-white;
   background: linear-gradient(
     to right,
     rgba(131, 70, 227, 1),
     rgba(11, 55, 214, 1)
   );
-  font-family: "Lota Grotesque";
 }
