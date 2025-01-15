@@ -1,7 +1,7 @@
 @import "../global.css";
 
 .side-bar-container {
-  @apply h-full w-[288px] border-r border-light-blue;
+  @apply w-[288px] border-r border-light-blue;
 }
 
 .logo-container {
@@ -17,7 +17,7 @@
 }
 
 .menu {
-  @apply mx-2.5 mt-24 h-screen;
+  @apply mx-2.5 mt-24;
 }
 
 .menu-item {
