@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import "@assets/css/components/SideBar/SideBar.css";
+import "@assets/css/side-bar/side-bar.css";
 import NFTIcon from "@assets/icon/NFT.svg";
 import logoImage from "@assets/img/logo.svg";
 import HomeIcon from "@assets/icon/home.svg";
@@ -14,7 +14,7 @@ import NFTsActiveIcon from "@assets/icon/NFT-active.svg";
 import SwapActiveIcon from "@assets/icon/swap-active.svg";
 import BridgeActiveIcon from "@assets/icon/bridge-active.svg";
 
-function sideBar() {
+function SideBar() {
   const location = useLocation();
 
   const menuItems = [
@@ -22,26 +22,19 @@ function sideBar() {
     { name: "Earn", path: "/Earn", icon: EarnIcon, activeIcon: EarnActiveIcon },
     { name: "NFTs", path: "/NFTs", icon: NFTIcon, activeIcon: NFTsActiveIcon },
     { name: "Swap", path: "/Swap", icon: SwapIcon, activeIcon: SwapActiveIcon },
-    {
-      name: "Bridge",
-      path: "/Bridge",
-      icon: BridgeIcon,
-      activeIcon: BridgeActiveIcon,
-    },
+    { name: "Bridge", path: "/Bridge", icon: BridgeIcon, activeIcon: BridgeActiveIcon},
   ];
 
   return (
-    <div className="sideBar">
-      <div className="logo">
+    <div className="side-bar-container">
+      <div className="logo-container">
         <img src={logoImage} className="logo-image" alt="logo image" />
         <img src={logoTitle} className="logo-title" alt="logo title" />
       </div>
       <div className="menu">
-        {menuItems.map((item) => (
-          <Link to={item.path}>
-            <div
-              className={`menu-item ${location.pathname === item.path ? "menu-item-active" : ""}`}
-            >
+        {menuItems.map((item, key) => (
+          <Link to={item.path} key={key}>
+            <div className={`menu-item ${location.pathname === item.path ? "menu-item-active" : ""}`}>
               <div className="menu-item-icon">
                 <img
                   src={
@@ -69,4 +62,4 @@ function sideBar() {
   );
 }
 
-export default sideBar;
+export default SideBar;

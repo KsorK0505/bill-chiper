@@ -1,13 +1,17 @@
+.home-content-piece {
+  @apply w-full h-[707px] rounded-3xl pb-8 px-9 bg-cover;
+}
+
 .home-content-piece.first {
-  @apply h-[707px] w-[484px] bg-globalStats-bg pb-8 pl-9 pr-10;
+  @apply bg-globalStats-bg;
 }
 
 .home-content-piece.second {
-  @apply h-[707px] w-[484px] bg-pluseChain-bg pb-8 pl-9 pr-10;
+  @apply bg-pluseChain-bg;
 }
 
 .home-content-piece.third {
-  @apply h-[707px] w-[484px] bg-avalanche-bg pb-8 pl-9 pr-10;
+  @apply bg-avalanche-bg;
 }
 
 .content-piece-logo.first {
@@ -27,11 +31,11 @@
 }
 
 .content-piece-data-title {
-  @apply font-Ocean text-3xl text-white;
+  @apply font-Ocean text-3xl;
 }
 
 .content-piece-data-item {
-  @apply flex h-[91px] items-center justify-between font-Lota text-2xl text-white;
+  @apply flex h-[91px] items-center justify-between font-Lota text-2xl;
 }
 
 .content-piece-data-item-border {

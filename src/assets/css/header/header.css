@@ -1,0 +1,11 @@
+.header {
+  @apply flex h-[106px] items-center border-b border-light-blue;
+}
+
+.connect-wallet-container {
+  @apply absolute right-11 h-14 w-[180px] rounded-full bg-gradient-to-r from-[rgba(131,70,227,1)] to-[rgba(11,55,214,1)] font-Lota text-lg;
+}
+
+.connect-wallet-container.connect {
+  @apply bg-none;
+}

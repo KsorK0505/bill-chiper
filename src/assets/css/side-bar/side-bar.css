@@ -1,21 +1,23 @@
-.sideBar {
+@import "../global.css";
+
+.side-bar-container {
   @apply h-full w-[288px] border-r border-light-blue;
 }
 
-.logo {
-  @apply relative left-6 top-6 flex h-[68px] w-[238px] items-center gap-3;
+.logo-container {
+  @apply m-6 flex h-[68px] w-[238px] items-center gap-3;
 }
 
 .logo-image {
-  @apply h-[68px] w-[70px];
+  @apply h-[68px] ;
 }
 
 .logo-title {
-  @apply h-[28px] w-[155px];
+  @apply h-[28px];
 }
 
 .menu {
-  @apply ml-3 mr-3 mt-24 h-screen w-[268px];
+  @apply mx-2.5 mt-24 h-screen;
 }
 
 .menu-item {
@@ -31,7 +33,7 @@
 }
 
 .menu-item-name-active {
-  @apply font-Lota text-xl text-white;
+  @apply font-Lota text-xl;
 }
 
 .menu-item-active {

@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
-import "@assets/css/components/Header/Header.css";
+import "@assets/css/Header/Header.css";
 
 function Header() {
   const [isConnected, setConnected] = useState(false);
 
   return (
     <div className="header">
-      <button
-        className={`connect-wallet-button ${isConnected ? "connect" : ""}`}
+      <div
+        className={`connect-wallet-container ${isConnected ? "connect" : ""}`}
       >
         <ConnectButton.Custom>
           {({
@@ -21,8 +21,6 @@ function Header() {
             authenticationStatus,
             mounted,
           }) => {
-            // Note: If your app doesn't use authentication, you
-            // can remove all 'authenticationStatus' checks
             const ready = mounted && authenticationStatus !== "loading";
             const connected =
               ready &&
@@ -114,7 +112,7 @@ function Header() {
             );
           }}
         </ConnectButton.Custom>
-      </button>
+      </div>
     </div>
   );
 }

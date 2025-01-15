@@ -1,10 +1,10 @@
 import React from "react";
 
-import "@assets/css/pages/Home/Home.css";
+import "@assets/css/home/home.css";
 import PluseChainLogo from "@assets/img/pluseChain-logo.svg";
 import GlobalStatsLogo from "@assets/img/globalStats-logo.svg";
 import AvalancheLogo from "@assets/img/avalancheStats-logo.svg";
-import HomeContentPiece from "@/components/Content/Home/HomeContentPiece";
+import HomeContentPiece from "@/components/Home/HomeContentPiece/HomeContentPiece";
 
 function Home() {
   const datas = [
@@ -41,7 +41,7 @@ function Home() {
   ];
 
   return (
-    <div className="home">
+    <div className="home-container">
       {datas.map((item, index) => (
         <HomeContentPiece key={index} props={item} />
       ))}
