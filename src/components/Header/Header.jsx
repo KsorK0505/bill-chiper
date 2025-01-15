@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
-import "@assets/css/Header/Header.css";
+import "@assets/css/header/header.css";
 
 function Header() {
   const [isConnected, setConnected] = useState(false);
