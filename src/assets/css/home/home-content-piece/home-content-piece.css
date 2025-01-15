@@ -1,3 +1,5 @@
+@import "../../global.css";
+
 .home-content-piece {
   @apply w-full h-[707px] rounded-3xl pb-8 px-9 bg-cover;
 }

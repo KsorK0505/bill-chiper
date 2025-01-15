@@ -8,6 +8,11 @@ function Header() {
 
   return (
     <div className="header">
+      <div className="menu-button">
+          <span className="line" />
+          <span className="line" />
+          <span className="line" />
+      </div>
       <div
         className={`connect-wallet-container ${isConnected ? "connect" : ""}`}
       >

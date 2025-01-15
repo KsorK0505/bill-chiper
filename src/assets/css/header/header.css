@@ -1,3 +1,5 @@
+@import "../global.css";
+
 .header {
   @apply flex h-[106px] items-center border-b border-light-blue;
 }
@@ -8,4 +10,11 @@
 
 .connect-wallet-container.connect {
   @apply bg-none;
+}
+
+.menu-button {
+  @apply ml-8 gap-2 flex flex-col md:hidden cursor-pointer;
+}
+.menu-button .line {
+  @apply w-8 h-1 block bg-white;
 }

@@ -1,7 +1,7 @@
 @import "../global.css";
 
 .side-bar-container {
-  @apply w-[288px] border-r border-light-blue;
+  @apply w-[288px] border-r border-light-blue max-md:hidden;
 }
 
 .logo-container {
