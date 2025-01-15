@@ -1,4 +1,4 @@
-var u = `{
+var u=`{
   "connect_wallet": {
     "label": "वॉलेट को कनेक्ट करें",
     "wrong_network": {
@@ -1346,5 +1346,4 @@ var u = `{
     }
   }
 }
-`;
-export { u as default };
+`;export{u as default};

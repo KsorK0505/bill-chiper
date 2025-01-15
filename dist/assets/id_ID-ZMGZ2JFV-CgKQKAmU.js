@@ -1,4 +1,4 @@
-var n = `{
+var n=`{
   "connect_wallet": {
     "label": "Hubungkan Dompet",
     "wrong_network": {
@@ -1346,5 +1346,4 @@ var n = `{
     }
   }
 }
-`;
-export { n as default };
+`;export{n as default};
